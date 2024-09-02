@@ -66,7 +66,7 @@ const Header = () => {
 };
 
 const headerStyle = {
-  padding: '40px 20px',
+  padding: '100px 20px',
   textAlign: 'left',
   backgroundColor: '#f7f7f7',
 };

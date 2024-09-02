@@ -60,10 +60,11 @@ const Skill = () => {
 
 const containerStyle = {
   textAlign: 'center',
-  padding: '20px',
+  padding: '60px',
   background: '#fff',
   borderRadius: '10px',
   boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+
 };
 
 const headingStyle = {
