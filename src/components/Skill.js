@@ -1,8 +1,6 @@
-
-
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaReact, FaVuejs, FaNodeJs, FaJava, FaPython, FaGitAlt } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiBootstrap, SiMysql, SiFigma, SiPostgresql, SiSpring } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiBootstrap, SiMysql, SiFigma, SiPostgresql, SiSpring, SiNotion } from 'react-icons/si';
 
 const skillsWell = [
   { name: '웹개발', icon: <FaHtml5 /> },
@@ -17,7 +15,8 @@ const skillsWell = [
   { name: 'Git', icon: <FaGitAlt /> },
   { name: 'Figma', icon: <SiFigma /> },
   { name: 'Mysql', icon: <SiMysql /> },
-  { name: 'PostgreSQL', icon: <SiPostgresql /> }
+  { name: 'PostgreSQL', icon: <SiPostgresql /> },
+  { name: 'Notion', icon: <SiNotion /> } // Notion 추가
 ];
 
 const skillsCan = [
@@ -25,35 +24,34 @@ const skillsCan = [
   { name: 'Java', icon: <FaJava /> },
   { name: 'Spring', icon: <SiSpring /> },
   { name: 'Python', icon: <FaPython /> }
-
 ];
 
 const Skill = () => {
   return (
     <section id="skills">
-    <div style={containerStyle}>
-      <h3 style={headingStyle}>나의 스킬</h3>
-      
-      <h4 style={subHeadingStyle}>잘해요</h4>
-      <div style={skillsContainerStyle}>
-        {skillsWell.map((skill, index) => (
-          <div key={index} style={skillBadgeStyle}>
-            {skill.icon}
-            <span style={skillTextStyle}>{skill.name}</span>
-          </div>
-        ))}
+      <div style={containerStyle}>
+        <h3 style={headingStyle}>나의 스킬</h3>
+        
+        <h4 style={subHeadingStyle}>잘해요</h4>
+        <div style={skillsContainerStyle}>
+          {skillsWell.map((skill, index) => (
+            <div key={index} style={skillBadgeStyle}>
+              {skill.icon}
+              <span style={skillTextStyle}>{skill.name}</span>
+            </div>
+          ))}
+        </div>
+        
+        <h4 style={subHeadingStyle}>할 수 있어요</h4>
+        <div style={skillsContainerStyle}>
+          {skillsCan.map((skill, index) => (
+            <div key={index} style={skillBadgeStyle}>
+              {skill.icon}
+              <span style={skillTextStyle}>{skill.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
-      
-      <h4 style={subHeadingStyle}>할 수 있어요</h4>
-      <div style={skillsContainerStyle}>
-        {skillsCan.map((skill, index) => (
-          <div key={index} style={skillBadgeStyle}>
-            {skill.icon}
-            <span style={skillTextStyle}>{skill.name}</span>
-          </div>
-        ))}
-      </div>
-    </div>
     </section>
   );
 };
@@ -64,7 +62,6 @@ const containerStyle = {
   background: '#fff',
   borderRadius: '10px',
   boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-
 };
 
 const headingStyle = {
@@ -84,7 +81,8 @@ const skillsContainerStyle = {
   display: 'flex',
   justifyContent: 'center',
   flexWrap: 'wrap',
-  marginBottom: '20px',
+  maxWidth: '1000px', 
+  margin: '0 auto 20px auto',
 };
 
 const skillBadgeStyle = {

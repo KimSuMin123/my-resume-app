@@ -25,7 +25,7 @@ const Header = () => {
           />
         </div>
         <div style={infoStyle}>
-          <h1 style={nameStyle}>김수민 | Portfolio</h1>
+          <h1 style={nameStyle}>김수민 | 프론트엔드 개발자</h1>
           <p style={descriptionStyle}>
             👋 새로운 작업 환경을 두려워하지 않고 학습하는 개발자, 김수민입니다.
           </p>
