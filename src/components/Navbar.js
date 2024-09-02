@@ -38,7 +38,7 @@ function Navbar() {
       <ul style={navbarMenuStyle}>
         <li style={navbarItemStyle}><a style={navbarLinkStyle} href="#Home">홈</a></li>
         <li style={navbarItemStyle}><a style={navbarLinkStyle} href="#skills">기술</a></li>
-        <li style={navbarItemStyle}><a style={navbarLinkStyle} href="#education">학력</a></li>
+        <li style={navbarItemStyle}><a style={navbarLinkStyle} href="#education">교육</a></li>
         <li style={navbarItemStyle}><a style={navbarLinkStyle} href="#experience">경력</a></li>
         <li style={navbarItemStyle}><a style={navbarLinkStyle} href="#awards">수상</a></li>
         <li style={navbarItemStyle}><a style={navbarLinkStyle} href="#volunteer">봉사</a></li>

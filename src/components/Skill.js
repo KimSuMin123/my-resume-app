@@ -16,73 +16,95 @@ const skillsWell = [
   { name: 'Figma', icon: <SiFigma /> },
   { name: 'Mysql', icon: <SiMysql /> },
   { name: 'PostgreSQL', icon: <SiPostgresql /> },
-  { name: 'Notion', icon: <SiNotion /> } // Notion 추가
+  { name: 'Notion', icon: <SiNotion /> }
 ];
 
 const skillsCan = [
   { name: 'Node.js', icon: <FaNodeJs /> },
   { name: 'Java', icon: <FaJava /> },
   { name: 'Spring', icon: <SiSpring /> },
-  { name: 'Python', icon: <FaPython /> }
+  { name: 'Python', icon: <FaPython /> },
+  
 ];
 
 const Skill = () => {
   return (
     <section id="skills">
       <div style={containerStyle}>
-        <h3 style={headingStyle}>나의 스킬</h3>
-        
-        <h4 style={subHeadingStyle}>잘해요</h4>
-        <div style={skillsContainerStyle}>
-          {skillsWell.map((skill, index) => (
-            <div key={index} style={skillBadgeStyle}>
-              {skill.icon}
-              <span style={skillTextStyle}>{skill.name}</span>
+        <section style={sectionStyle}>
+          <h2 style={headingStyle}>나의 스킬</h2>
+          
+          <div style={skillsCategoryStyle}>
+            <h3 style={subHeadingStyle}>잘해요</h3>
+            <div style={skillsContainerStyle}>
+              {skillsWell.map((skill, index) => (
+                <div key={index} style={skillBadgeStyle} className="skill-badge">
+                  {skill.icon}
+                  <span style={skillTextStyle}>{skill.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        
-        <h4 style={subHeadingStyle}>할 수 있어요</h4>
-        <div style={skillsContainerStyle}>
-          {skillsCan.map((skill, index) => (
-            <div key={index} style={skillBadgeStyle}>
-              {skill.icon}
-              <span style={skillTextStyle}>{skill.name}</span>
+          </div>
+          
+          <div style={skillsCategoryStyle}>
+            <h3 style={subHeadingStyle}>할 수 있어요</h3>
+            <div style={skillsContainerStyle}>
+              {skillsCan.map((skill, index) => (
+                <div key={index} style={skillBadgeStyle} className="skill-badge">
+                  {skill.icon}
+                  <span style={skillTextStyle}>{skill.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
       </div>
     </section>
   );
 };
 
 const containerStyle = {
-  textAlign: 'center',
-  padding: '60px',
-  background: '#fff',
-  borderRadius: '10px',
-  boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-};
-
-const headingStyle = {
-  marginBottom: '20px',
-  fontSize: '28px',
+  padding: '40px 20px',
+  fontFamily: "'Helvetica Neue', Arial, sans-serif",
+  lineHeight: '1.8',
+  backgroundColor: '#f9f9f9',
   color: '#333',
 };
 
-const subHeadingStyle = {
-  marginBottom: '10px',
-  fontSize: '22px',
+const sectionStyle = {
+  marginBottom: '40px',
+  padding: '20px',
+  backgroundColor: '#fff',
+  borderRadius: '8px',
+  boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+};
+
+const headingStyle = {
+  borderBottom: '2px solid #007BFF',
+  paddingBottom: '10px',
+  marginBottom: '20px',
+  fontSize: '24px',
+  color: '#333',
   fontWeight: 'bold',
-  color: '#555',
+};
+
+const subHeadingStyle = {
+  fontSize: '20px',
+  margin: '10px 0',
+  fontWeight: 'bold',
+  color: '#007BFF',
+};
+
+const skillsCategoryStyle = {
+  marginBottom: '20px',
 };
 
 const skillsContainerStyle = {
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: 'flex-start',
   flexWrap: 'wrap',
-  maxWidth: '1000px', 
-  margin: '0 auto 20px auto',
+  
+  margin: '0 auto',
 };
 
 const skillBadgeStyle = {
@@ -97,11 +119,7 @@ const skillBadgeStyle = {
   boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
   transition: 'transform 0.2s, box-shadow 0.2s',
   cursor: 'pointer',
-};
-
-const skillBadgeHoverStyle = {
-  transform: 'translateY(-5px)',
-  boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.15)',
+  maxWidth: '120px',
 };
 
 const skillTextStyle = {
@@ -109,3 +127,4 @@ const skillTextStyle = {
 };
 
 export default Skill;
+

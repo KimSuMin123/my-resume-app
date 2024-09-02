@@ -8,13 +8,15 @@ const Experience = () => {
         <h2 style={headingStyle}>경력</h2>
         <p style={experienceSummaryStyle}>총 5개월</p>
         <div style={experienceItemStyle}>
-          <p style={dateStyle}>2022.12 ~ 2023.02 (3개월)</p>
+         
           <h3 style={subHeadingStyle}>(주)필드유 - 인턴</h3>
+          <p style={dateStyle}>2022.12 ~ 2023.02 (3개월)</p>
           <p style={detailStyle}>Vue.js를 이용한 프론트엔드 개발 업무</p>
         </div>
         <div style={experienceItemStyle}>
-          <p style={dateStyle}>2022.07 ~ 2022.08 (2개월)</p>
+          
           <h3 style={subHeadingStyle}>(주)알라딘시스템 - 인턴</h3>
+          <p style={dateStyle}>2022.07 ~ 2022.08 (2개월)</p>
           <p style={detailStyle}>PostgreSQL을 이용한 데이터 보조 업무 및 퍼블리싱 업무</p>
         </div>
       </section>

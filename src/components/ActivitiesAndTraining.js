@@ -43,10 +43,7 @@ const ActivitiesAndTraining = () => {
             <p style={dateStyle}>2024.04 ~ 2024.06</p>
             <p style={detailStyle}>스프링 기초 공부를 위한 스터디</p>
           </div>
-          <div style={activityItemStyle}>
-            <h4 style={subHeadingStyle}>구름톤 트레이닝 수료</h4>
-            <p style={dateStyle}>2024.02 ~ 2024.08</p>
-          </div>
+      
         </div>
       </section>
     </div>
