@@ -14,9 +14,8 @@ const Award = () => {
           <p style={detailStyle}>MBTI 동아리 추천 사이트 개발 - Android Studio 서버 개발</p>
           <h3 style={subHeadingStyle}>안양시 인재육성제단 IT 장학금 수상 (2022년)</h3>
           <p style={detailStyle}>다양한 교내외 활동과 우수한 성적</p>
-        
-        <h3 style={subHeadingStyle}>대림대 해커톤 입상 (2024년)</h3>
-        <p style={detailStyle}>코린이들을 위한 코딩 게임 개발 - React 프론트 엔드 개발, Node 백엔드 개발 </p>
+          <h3 style={subHeadingStyle}>교내 봉사상 수상 (2023년)</h3>
+          학생회, 반대표 등 교내 봉사
         </div>
       </section>
     </div>
