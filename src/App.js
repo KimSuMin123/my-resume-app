@@ -15,7 +15,8 @@ function App() {
   return (
     <div className="App">
    <Navbar/>
-      <Header/>
+   <div className='content' style={{ padding: '0 20px',  backgroundColor: '#f9f9f9',}}>
+   <Header/>
       <Skill/>
       <Education/>
       <Experience/>
@@ -24,6 +25,8 @@ function App() {
     <Certification/>
 <ActivitiesAndTraining/>
 <Projects/>
+   </div>
+     
     </div>
   );
 }
