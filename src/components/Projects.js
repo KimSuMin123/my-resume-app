@@ -68,7 +68,7 @@ const Projects = () => {
               <p style={dateStyle}>2024.04 ~ 2024.07</p>
               <a href="https://www.canva.com/design/DAGJLifg0YI/0ruL7Qk2npEBFaPbBG6IEA/edit?utm_content=DAGJLifg0YI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" style={linkStyle}>프로젝트 소개서</a>
               <br />
-              <a href="https://www.codeadventure.shop/" target="_blank" rel="noopener noreferrer" style={linkStyle}>Project Link</a>
+             
 
               <p style={detailStyle}>코린이들을 위한 코딩 게임 개발 - React 프론트 엔드 개발, Node 백엔드 개발</p>
             </div>
