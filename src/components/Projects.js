@@ -28,7 +28,7 @@ const Projects = () => {
             <div style={activityItemStyle}>
               <iframe 
                 width="100%" 
-                height="315" 
+                height="350" 
                 src="https://www.youtube.com/embed/YubAbuHyKdQ" 
                 title="YouTube video player" 
                 frameBorder="0" 
@@ -44,7 +44,7 @@ const Projects = () => {
             <div style={activityItemStyle}>
               <iframe 
                 width="100%" 
-                height="315" 
+                height="350" 
                 src="https://www.youtube.com/embed/S62rpAE_94I" 
                 title="YouTube video player" 
                 frameBorder="0" 
@@ -153,7 +153,7 @@ const iframeStyle = {
 
 const imageStyle = {
   width: '100%',
-  height: 'auto',
+  height: '350px',
   borderRadius: '8px',
   marginBottom: '10px',
 };
