@@ -23,7 +23,7 @@ const Review = ({ closeModal }) => {
       <div style={headingContainerStyle}>
         <h2 style={headingStyle}>동료들이 본 나의 활동</h2>
         <button style={closeButtonStyle} onClick={closeModal}>
-          X
+        ✕
         </button>
       </div>
 
