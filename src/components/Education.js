@@ -9,21 +9,21 @@ const Education = () => {
         <div style={educationItemStyle}>
           
           <h3 style={subHeadingStyle}>대림대학교(4년제)</h3>
-          <p style={dateStyle}>2024.03 ~ 재학중</p>
+          <p style={dateStyle}>2021.03 ~ 2025.02 / 졸업예정</p>
           <p style={detailStyle}>컴퓨터 소프트웨어 학과</p>
         </div>
         <div style={educationItemStyle}>
           
-          <h3 style={subHeadingStyle}>구름톤 트레이닝 수료</h3>
-          <p style={dateStyle}>수료(2024.02~2024.08)</p>
+          <h3 style={subHeadingStyle}>[구름 X 인프런] 자바 스프링 & 리액트 풀스택 개발자 과정_7회차</h3>
+          <p style={dateStyle}>수료(2024.02.02 ~ 2024.08.14)</p>
           <p style={detailStyle}>[구름 X 인프런] 자바 스프링 & 리액트 풀스택 개발자 과정</p>
+          <p style={detailStyle}>
+          교육내용<br/>
+            HTML / CSS / JavaScript / TypeScript / React.js <br/>
+            Java / Spring / Git
+          </p>
         </div>
-        <div style={educationItemStyle}>
-         
-          <h3 style={subHeadingStyle}>대림대학교(3년제)</h3>
-          <p style={dateStyle}>졸업(2021.03~2024.02)</p>
-          <p style={detailStyle}>컴퓨터정보학부</p>
-        </div>
+        
       </section>
     </div>
     </section>
