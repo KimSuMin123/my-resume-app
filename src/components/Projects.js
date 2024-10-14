@@ -181,7 +181,7 @@ const Projects = () => {
 
  const buttonContainerStyle = {
    display: 'flex',
-   justifyContent: 'center',
+   margin:'20px',
    marginBottom: '30px',
  };
  
