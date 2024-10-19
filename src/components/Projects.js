@@ -164,7 +164,7 @@ const Projects = () => {
    lineHeight: '1.8',
    backgroundColor: '#fff',
    color: '#333',
-   maxWidth: '1650px',
+   maxWidth: '1660px',
    margin: '0 auto',
    borderRadius: '10px',
    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',

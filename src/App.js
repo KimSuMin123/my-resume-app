@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
    <Navbar/>
-   <div className='content' style={{ padding: '0 20px',  backgroundColor: '#f9f9f9',}}>
+   <div className='content' style={{ padding: '0 15px',  backgroundColor: '#f9f9f9',}}>
    <Header/>
       <Skill/>
       <Education/>
